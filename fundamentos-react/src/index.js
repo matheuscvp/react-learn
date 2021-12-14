@@ -2,16 +2,10 @@ import './index.css'
 import ReactDOM from 'react-dom'
 import React from 'react'
 
-import Primeiro from './components/basicos/Primeiro'
-import ComParametro from './components/basicos/ComParametro'
+import App from './App'
 
-const tag = <h1>Olá React!</h1>
 
 ReactDOM.render(
-    <div>
-        {tag}
-        <Primeiro></Primeiro>
-        <ComParametro titulo="Segundo Componente" subtitulo="Muito legal"/>
-    </div>,
+    <App/>,
     document.getElementById('root')
 )

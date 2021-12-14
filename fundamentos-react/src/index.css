@@ -1,7 +1,9 @@
 body {
+    font-family: 'Poppins', sans-serif;
     background-color: aqua;
+    text-align: center;
 }
 
-div {
-    background-color: whitesmoke;
+h1, h2, h3 {
+    font-weight: 300;
 }
