@@ -4,6 +4,9 @@ import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
+import Familia from './components/basicos/Familia'
+import FamiliaMembro from './components/basicos/FamiliaMembro'
+import ListaAlunos from './components/repeticao/ListaAlunos'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -11,6 +14,10 @@ export default () => {
         <div className="App">
             <h1> Fundamentos React </h1>
             <div className="Cards">
+                <Card titulo="Repetição" color="black">
+                    <ListaAlunos></ListaAlunos>
+                </Card>
+
                 <Card titulo="Exemplo" color="#FA6900">
                     <Aleatorio max={60} min={1} />
                 </Card>
