@@ -9,6 +9,9 @@ import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comuncacao/DiretaPai'
+import IndiretaPai from './components/comuncacao/IndiretaPai'
+import Input from './components/formulario/Input'
+import Contador from './components/contador/Contador'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -16,7 +19,22 @@ export default () => {
         <div className="App">
             <h1> Fundamentos React </h1>
             <div className="Cards">
-                <Card titulo="Comunicação" color="#59323C">
+                <Card titulo="Contador classe" color="#E45F56">
+                    <Contador numeroInicial={100}></Contador>
+                </Card>
+
+                <Card titulo="Component controlado (Input)" color="#E45F56">
+                    <Input valor="Nome"></Input>
+                    <Input valor="Idade"></Input>
+                    <Input valor="Sexo"></Input>
+                    <Input valor="Profissão"></Input>
+                </Card>
+
+                <Card titulo="Comunicação Indireta" color="#8BAD39">
+                    <IndiretaPai />
+                </Card>
+
+                <Card titulo="Comunicação Direta" color="#59323C">
                     <DiretaPai />
                 </Card>
 
