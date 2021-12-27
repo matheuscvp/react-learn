@@ -3,7 +3,6 @@ import PageTitle from '../../components/layout/PageTitle'
 import SectionTitle from './../../components/layout/SectionTitle';
 import { useCounter } from './../../hooks/useCounter';
 import { useFetch } from './../../hooks/useFetch';
-import { Link } from 'react-router-dom';
 
 const UseRef = (props) => {
     const [count, inc, dec] = useCounter();
